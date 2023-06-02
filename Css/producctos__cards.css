@@ -1,0 +1,73 @@
+
+.productos__cards{
+    background-color: white;
+    border: 2px solid #E59934;
+    display: grid;
+    grid-template-areas: 
+        "imagen"
+        "nombre"
+        "precio"
+        "link";
+    border-radius: 1rem;
+    padding: 1rem;
+    transition: 1s;
+    
+}
+
+.productos__cards:hover{
+    color: #E59934;
+    background-color: rgb(44, 39, 46);
+    cursor: pointer;
+    border: 2px solid #E7F6F2;
+    box-shadow: 0px 10px 20px 0px #E59934;
+    transition: 1s;
+}
+
+.card{
+    grid-area: imagen;
+    width: 10rem;
+    height: 10rem;
+    margin-bottom: 1rem;
+    
+
+}
+.card__nombre{
+    grid-area: nombre;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.card__precio{
+    grid-area: precio;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-weight: bold;
+
+}
+.card__enlace{
+    grid-area: link;
+    font-size: 0.8rem;
+    text-align: center;
+    text-decoration: none;
+    color: #E59934;
+    
+}
+
+@media screen and (max-width: 950px){
+
+    .productos__cards{
+        width: 30%;
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width: 650px){
+
+    .productos__cards{
+        
+        width: 80%;
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
+}

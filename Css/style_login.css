@@ -1,0 +1,71 @@
+.header{
+    margin-top: 1rem;
+}
+
+.login__caja{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 2rem;
+    align-items: center;
+    background-color:  rgba(88, 88, 88, 0.2);
+    height: 500px;
+    margin-bottom: 4rem;
+    margin-left: 5rem ;
+    margin-right: 5rem;
+}
+
+.login__title{
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    font-weight: 800;
+}
+.login__title:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.caja__input{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.login__caja__input{
+    height: 2.5rem;
+    width: 20rem;
+    margin: 1rem 0rem;
+    font-size: 1rem;
+    border-radius: 1rem;
+    color: #E59934;
+    border: 2px solid black;
+}
+
+.login__caja__button{
+    height: 2.5rem;
+    width: 20rem;    
+    text-align: center;
+    margin: 1rem 0rem;
+    font-size: 1rem;
+    border-radius: 1rem;
+    transition: 1s;
+}
+
+.login__caja__button:hover,.login__caja__input:hover{
+    
+    color: #E59934;
+    background-color: #3333;
+    cursor: pointer;
+    border: 2px solid #E7F6F2;
+    box-shadow: 0px 10px 20px 0px #E59934;
+    transition: 1s;
+}
+
+@media screen and (max-width: 650px) {
+
+    .login__caja {
+        margin-left: 0rem;
+        margin-right: 0rem;
+    }
+    
+}

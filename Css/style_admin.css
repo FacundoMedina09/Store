@@ -1,0 +1,9 @@
+.card__container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card__borrar, .card__editar{
+    text-decoration: none;
+    color: #E59934;
+}

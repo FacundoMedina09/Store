@@ -1,0 +1,151 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    color: #E59934;
+    background-color: #2C272E;
+}
+
+.header{
+    background-color: #2C272E;
+}
+
+.header__section{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 1rem;
+
+}
+
+.header__section__logo{
+    display: flex;
+    margin-top: 1rem;
+    
+}
+.header__logo{
+    margin-right: 1rem;
+    height: 4rem;
+    width: 4rem;
+    box-shadow: 0px 10px 20px 0px #E59934;
+    border-radius: 50%;
+    
+    
+}
+.header__titulo{
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #E59934;
+    text-decoration: none;
+
+    
+}
+
+.contenedor__buscador__button{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.header__section__buscador{
+    margin-top: 1.3rem;
+    margin-right: 5rem;
+}
+
+.header__buscador{
+    padding: 1.2rem 1rem;
+    outline: none;
+    font-size: 1rem;
+    border-radius: 1rem;
+    transition: 1s;
+    
+}
+
+.header__section__button{
+    margin-top: 1.3rem;
+    margin-right: 5%;
+    
+}
+.header__button{
+    
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    border-radius: 1rem;
+    transition: 1s;
+}
+
+.header__titulo:hover, .header__logo:hover{
+    cursor: pointer;
+    outline: #E59934;
+}
+.header__titulo:hover{
+    
+    text-decoration: underline;
+}
+
+.header__button:hover, .header__buscador:hover  {
+    
+    color: #E59934;
+    background-color: #3333;
+    cursor: pointer;
+    border: 2px solid #E7F6F2;
+    box-shadow: 0px 10px 20px 0px #E59934;
+    transition: 1s;
+}
+
+
+/* Boton de agregar producto(pagina de admin)*/
+
+.boton_productos_admin{
+    text-align: initial;
+    width: 5rem;
+    transition: 1s;
+    border: 2px solid black;
+    border-radius: 1rem;
+    font-size: 0.8rem;
+}
+
+.boton_productos_admin:hover{
+    
+    color: #E59934;
+    background-color: #3333;
+    cursor: pointer;
+    border: 2px solid #E7F6F2;
+    box-shadow: 0px 10px 20px 0px #E59934;
+    transition: 1s;
+}
+
+@media screen and (max-width: 650px){
+
+    .header__section {
+        flex-direction: column-reverse;
+    }
+
+    .header__section__logo {
+        display: block;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .header__logo {    
+        height: 6rem;
+        width: 6rem;
+    }
+    .header__titulo {    
+        font-size: 3rem;
+    }
+
+    .header__section__buscador {
+        justify-content: center;
+        display: flex;
+    }
+
+    .header__buscador {
+        width: 20%;
+        padding: 1rem 3rem;
+        margin-left: 20%;
+        
+    }
+
+}
+
+@media screen and (max-width: 950px){
+
+}
